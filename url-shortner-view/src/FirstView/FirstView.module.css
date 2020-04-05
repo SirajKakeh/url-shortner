@@ -24,6 +24,7 @@ h1{
     margin-top: 10px;
     margin-bottom: 30px;
     font-weight: bold;
+    font-size: 33px;
 }
 
 
@@ -105,7 +106,7 @@ h1{
     }
     
     .Input{
-        width: 30%;
+        width: 60%;
     }
     .Button{
         width: auto;
@@ -122,6 +123,9 @@ h1{
         margin: 0 320px;
     }
     
+    .Input{
+        width: 60%;
+    }
     
 
 }
@@ -131,7 +135,9 @@ h1{
         padding: 20px;
         margin: 0 420px;
     }
-    
+    .Input{
+        width: 60%;
+    }
 }
 
 
