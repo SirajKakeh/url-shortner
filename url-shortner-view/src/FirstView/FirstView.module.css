@@ -58,7 +58,13 @@ h1{
         padding: 10px;
         margin: 0 10px;
     }
- 
+    
+    .Input{
+        width: 30%;
+    }
+    .Button{
+        width: auto;
+    }
 }
 
 
@@ -68,6 +74,12 @@ h1{
         margin: 0 70px;
     }
     
+    .Input{
+        width: 30%;
+    }
+    .Button{
+        width: auto;
+    }
 }
 
 
@@ -76,7 +88,13 @@ h1{
         padding: 10px;
         margin: 0 130px;
     }
-  
+    
+    .Input{
+        width: 30%;
+    }
+    .Button{
+        width: auto;
+    }
 }
 
 
@@ -85,13 +103,27 @@ h1{
         padding: 10px;
         margin: 0 200px;
     }
+    
+    .Input{
+        width: 30%;
+    }
+    .Button{
+        width: auto;
+    }
 }
+
+
+
+
 
 @media(min-width:1300px )and (min-height:700px){
     .FirstView{
         padding: 20px;
         margin: 0 320px;
     }
+    
+    
+
 }
 
 @media(min-width:1500px )and (min-height:700px){
