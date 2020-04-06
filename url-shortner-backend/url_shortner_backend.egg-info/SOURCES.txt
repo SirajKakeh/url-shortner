@@ -1,7 +1,0 @@
-README.rst
-setup.py
-url_shortner_backend/__init__.py
-url_shortner_backend.egg-info/PKG-INFO
-url_shortner_backend.egg-info/SOURCES.txt
-url_shortner_backend.egg-info/dependency_links.txt
-url_shortner_backend.egg-info/top_level.txt
