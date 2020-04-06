@@ -1,2 +1,2 @@
 FLASK_ENV=development
-FLASK_APP=mu.py
+FLASK_APP=index.py
