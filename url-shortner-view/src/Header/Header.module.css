@@ -1,14 +1,8 @@
-.Header{
+
+.Header p{
     color: rgb(2, 141, 221);
+    margin: 30px;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-
-
-p{
-    margin: 30px;
 }

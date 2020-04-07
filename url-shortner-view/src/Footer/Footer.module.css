@@ -1,0 +1,30 @@
+.Footer{
+    box-sizing: border-box;
+    background-color:rgb(36, 36, 36);
+    border-top: 4px solid  rgb(2, 141, 221);
+    height: auto;
+    padding: 20px 0 50px 0;
+    color: white;
+    margin-top: 20px;
+    
+}
+.Footer p{
+    margin-bottom: 0;
+}
+
+ ul{
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.Li{
+    color: rgba(80, 79, 79, 0.39);
+    margin: 2px;
+    padding: 2px;
+    font-size: 17px;
+} 

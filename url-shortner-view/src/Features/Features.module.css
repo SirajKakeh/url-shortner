@@ -1,0 +1,12 @@
+.Features{
+  margin: 40px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.Row{
+    display: table;
+    margin: 10px 40px 10px 40px;
+    
+}
+

@@ -1,0 +1,21 @@
+.FooterLinks {
+    margin: 2px;
+    padding: 5px;
+    font-size: 17px;
+    
+}
+
+.FooterLinks a{
+    width: 100%;
+    color: rgb(2, 141, 221);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.FooterLinks a:hover,
+.FooterLinks a:active{
+    color: rgb(0, 111, 175);
+    text-decoration: underline;
+}
+
+

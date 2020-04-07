@@ -1,5 +1,6 @@
 import React ,{Component} from 'react';
 import classes from './FirstView.module.css';
+import Footer from '../Footer/Footer';
 
 
 class FirstView extends Component{
@@ -17,7 +18,9 @@ class FirstView extends Component{
                         <p>Use our URL Shortener to create a shortened link making it easy to remember.</p>
                     </div>
                 </div>
+               
             </div>
+           
         );
     }
 }
