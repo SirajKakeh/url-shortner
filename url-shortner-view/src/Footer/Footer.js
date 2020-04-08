@@ -3,7 +3,7 @@ import FooterLinks from './FooterLinks/FooterLinks';
 import classes from './Footer.module.css';
 const Footer=()=>(
 
-    <div className={classes.Footer}>
+    <footer className={classes.Footer}>
         <p>© 2020 ShortUrl.at - Tool to shorten a long link.</p>
         <ul>
             <FooterLinks link="/ShortUrl.at" >ShortUrl.at</FooterLinks>
@@ -16,7 +16,7 @@ const Footer=()=>(
             <li className={classes.Li}>|</li>
             <FooterLinks link="/Contact">Contact</FooterLinks>
         </ul>
-    </div>
+    </footer>
 
 );
 

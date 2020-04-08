@@ -1,8 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 .FirstView{
     background-color: white;
     padding: 20px;
     margin: 0 20px;
-    box-sizing: border-box;
     text-align: center;
     box-shadow: 0px 0px 3px 0.5px rgb(228, 227, 227);
     
@@ -11,7 +14,7 @@
 .MainDiv{
   margin: 0 auto;
   max-width: 800px;
-  box-sizing: border-box;
+ 
 }
 
 .Div{
@@ -19,12 +22,13 @@
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
-    box-sizing: border-box;
+   
 }
+
 .Div p{
     margin: 2px;
     color: rgba(0, 0, 0, 0.685);
-    box-sizing: border-box;
+    
 }
 
 h1{
@@ -33,7 +37,6 @@ h1{
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 33px;
-    box-sizing: border-box;
 }
 
 
@@ -46,7 +49,6 @@ h1{
     font-size: 18px;
     padding: 1px;
     border-radius: 2px;
-    box-sizing: border-box;
 }
 
 .Button{
@@ -56,15 +58,12 @@ h1{
     color: white;
     font-weight: bold;
     padding: 10px;
-    
-
+    cursor: pointer;
 }
-
 
 .InputDiv{
     width: 100%;
     display: inline-block;
-    box-sizing: border-box;
 }
 
 

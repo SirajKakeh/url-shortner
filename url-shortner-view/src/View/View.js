@@ -6,10 +6,12 @@ import Features from '../Features/Features';
 class View extends Component{
     render(){
         return(
-            <React.Fragment className={classes.View}>
-             <Route  component={FirstView}/>
-             <Route component={Features}/>
-            </React.Fragment>
+           
+            <main className={classes.View}>
+                <FirstView/>
+                <Features/>
+            </main>
+       
         );
     }
 }

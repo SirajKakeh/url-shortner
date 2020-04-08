@@ -14,11 +14,10 @@ h3{
 .Column{
     box-sizing: border-box;
     text-align: center;
-    width: 33.31%;
+    width: 33%;
     float: left;
     display: table-cell;
     padding: 0 6px;
-    
 }
 
 img{

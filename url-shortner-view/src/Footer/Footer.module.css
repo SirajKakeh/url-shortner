@@ -6,7 +6,10 @@
     padding: 20px 0 50px 0;
     color: white;
     margin-top: 20px;
-    
+    width: 100%;
+    bottom: 0;
+    margin: 51% 0 0 0;
+    position: static;
 }
 .Footer p{
     margin-bottom: 0;
@@ -28,3 +31,12 @@
     padding: 2px;
     font-size: 17px;
 } 
+
+
+  
+  
+  @media (min-width: 1200px) { 
+      .Footer{
+        margin: 0;  
+      }
+    }

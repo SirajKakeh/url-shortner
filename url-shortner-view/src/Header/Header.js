@@ -3,9 +3,9 @@ import classes from './Header.module.css';
 
 
 const Header =()=>(
-    <div className={classes.Header}>
+    <header className={classes.Header}>
       <p>Short URL</p>
-    </div>
+    </header>
 );
 
 export default Header;
