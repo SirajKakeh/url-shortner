@@ -1,15 +1,13 @@
 .Footer{
-    box-sizing: border-box;
     background-color:rgb(36, 36, 36);
     border-top: 4px solid  rgb(2, 141, 221);
     height: auto;
     padding: 20px 0 50px 0;
     color: white;
-    margin-top: 20px;
     width: 100%;
     bottom: 0;
     margin: 51% 0 0 0;
-    position: static;
+
 }
 .Footer p{
     margin-bottom: 0;
@@ -25,16 +23,7 @@
     justify-content: center;
  }
 
-.Li{
-    color: rgba(80, 79, 79, 0.39);
-    margin: 2px;
-    padding: 2px;
-    font-size: 17px;
-} 
 
-
-  
-  
   @media (min-width: 1200px) { 
       .Footer{
         margin: 0;  
