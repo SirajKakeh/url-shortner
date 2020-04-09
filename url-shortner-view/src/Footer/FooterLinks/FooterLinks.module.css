@@ -2,7 +2,7 @@
     margin: 2px;
     padding: 5px;
     font-size: 17px;
-    
+    display: inline-flex;
 }
 
 .FooterLinks a{
@@ -18,4 +18,10 @@
     text-decoration: underline;
 }
 
+.Li{
+    color: rgba(80, 79, 79, 0.39);
+    margin: 2px;
+    padding: 2px;
+    font-size: 17px;
+} 
 

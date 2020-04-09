@@ -6,7 +6,9 @@ const Footer=()=>(
     <footer className={classes.Footer}>
         <p>© 2020 ShortUrl.at - Tool to shorten a long link.</p>
         <ul>
-            <FooterLinks link="/ShortUrl.at" >ShortUrl.at</FooterLinks>
+
+            <FooterLinks/>
+            {/* <FooterLinks link="/ShortUrl.at" >ShortUrl.at</FooterLinks>
             <li className={classes.Li}>|</li>
             <FooterLinks link="/URLClickCounter">URL Click Counter</FooterLinks>
             <li className={classes.Li}>|</li>
@@ -14,7 +16,7 @@ const Footer=()=>(
             <li className={classes.Li}>|</li>
             <FooterLinks link="/PrivacyPolicy">Privacy Policy</FooterLinks>
             <li className={classes.Li}>|</li>
-            <FooterLinks link="/Contact">Contact</FooterLinks>
+            <FooterLinks link="/Contact">Contact</FooterLinks> */}
         </ul>
     </footer>
 
