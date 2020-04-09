@@ -1,6 +1,6 @@
 .FooterLinks {
     margin: 2px;
-    padding: 5px;
+    padding: 5px ;
     font-size: 17px;
     display: inline-flex;
 }
@@ -10,6 +10,7 @@
     color: rgb(2, 141, 221);
     box-sizing: border-box;
     text-decoration: none;
+   padding-right:9px ;
 }
 
 .FooterLinks a:hover,
@@ -20,8 +21,9 @@
 
 .Li{
     color: rgba(80, 79, 79, 0.39);
-    margin: 2px;
-    padding: 2px;
     font-size: 17px;
+
+
+    
 } 
 
