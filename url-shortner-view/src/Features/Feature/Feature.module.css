@@ -1,0 +1,25 @@
+.Column p{
+    font-size: 15px;
+    color: rgb(80, 79, 79);
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.753);
+    margin-top: -5px;
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+.Column{
+    box-sizing: border-box;
+    text-align: center;
+    width: 33%;
+    float: left;
+    display: table-cell;
+    padding: 0 6px;
+}
+
+img{
+    width: 30%;
+}

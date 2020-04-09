@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+.FirstView{
+    background-color: white;
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 0.5px rgb(228, 227, 227);
+    
+}
+
+.MainDiv{
+  margin: 0 auto;
+  max-width: 800px;
+ 
+}
+
+.Div{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.Div p{
+    margin: 2px;
+    color: rgba(0, 0, 0, 0.685);
+    
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.685);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+
+.Input , .Button{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    width: 10%;
+    height: 60px;
+    font-size: 18px;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.Button{
+    width:auto;
+    padding: 5px;
+    background-color:  rgba(2, 141, 221, 0.884);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.InputDiv{
+    width: 100%;
+    display: inline-block;
+}
+
+
+@media(min-width:300px ){
+ 
+    .Input{
+        width: 35%;
+        padding: 10px;
+    }
+   
+}
+
+ @media(min-width:550px ){
+  
+    .Input{
+        width: 60%;
+        padding: 10px;
+    }
+  
+}
+
