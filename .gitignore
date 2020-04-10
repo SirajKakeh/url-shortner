@@ -22,3 +22,5 @@ yarn-error.log*
 .vscode/
 server/venv
 __pycache__
+personal
+personal.pub
