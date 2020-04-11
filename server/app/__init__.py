@@ -4,11 +4,7 @@ import os
 
 from config import Config
 
-app = Flask(
-    __name__,
-    template_folder="../../url-shortner-view/build",
-    static_folder="../../url-shortner-view/build/static",
-)
+app = Flask(__name__)
 
 app.config.from_object(Config)
 
