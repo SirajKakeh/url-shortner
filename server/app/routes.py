@@ -39,4 +39,5 @@ def encode_url():
     base_url = urlparse(base_url).scheme + "://"+ urlparse(base_url).netloc + "/url"
 
     short_url_id = db.insert_one({"url": url, "short_url": short_url}).inserted_id
+
     return make_response({"id": 'str(short_url_id)', "short_url": base_url + '/' + short_url}, 201)

@@ -1,0 +1,1 @@
+web: cd ./url-shortner-view; npm install; npm run build; cd ../server; gunicorn server:app;

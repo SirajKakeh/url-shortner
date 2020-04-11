@@ -13,6 +13,6 @@ app = Flask(
 app.config.from_object(Config)
 
 mongo = PyMongo(app)
-db = mongo.db[os.environ.get('url_shortner_db_name')]
+db = mongo.db[os.environ.get("url_shortner_db_name")]
 
 from app import routes
