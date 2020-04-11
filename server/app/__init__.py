@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_pymongo import PyMongo
+from pymongo import MongoClient
 import os
 
 from config import Config
@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 app.config.from_object(Config)
 
-mongo = PyMongo(app)
-db = mongo.db[os.environ.get("url_shortner_db_name")]
+client = MongoClient(os.environ.get("url_shortner_db_string"))
+
+db = client[os.environ.get("url_shortner_db_name")]
 
 from app import routes
