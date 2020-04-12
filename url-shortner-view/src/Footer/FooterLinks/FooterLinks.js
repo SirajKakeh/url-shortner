@@ -14,6 +14,9 @@ const FooterLinks =(props)=>{
 
     return(
 
+
+
+        
         <div>
             {footerlinks.map(footerlink=>(
                 <li className={classes.FooterLinks} key={footerlink.link}>
@@ -27,12 +30,6 @@ const FooterLinks =(props)=>{
         </div>
 
 
-        // <li className={classes.FooterLinks}>
-        //     <NavLink
-        //     to={props.link}>
-        //         {props.children}
-        //     </NavLink>
-        // </li>
     );
 }
 export default FooterLinks;
