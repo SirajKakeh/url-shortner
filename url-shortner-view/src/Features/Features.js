@@ -6,7 +6,7 @@ const Features = () => (
 	<div className={classes.Features}>
 		<div className={classes.Row}>
 			<Feature />
-		</div>
+		</div>{' '}
 	</div>
 );
 
