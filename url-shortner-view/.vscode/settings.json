@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "json.schemas": [
+
+    ],
+    "[javascript]": {
+        "editor.formatOnSave": true
+    }
+}
