@@ -1,9 +1,7 @@
 {
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "off",
     "editor.formatOnSave": true,
-    "json.schemas": [
-
-    ],
+    "json.schemas": [],
     "[javascript]": {
         "editor.formatOnSave": true
     }
