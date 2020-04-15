@@ -17,7 +17,7 @@ h2 {
 }
 
 
-ul {
+.ShareUrlDiv ul {
     list-style: none;
     display: inline-flex;
     margin: 0;
