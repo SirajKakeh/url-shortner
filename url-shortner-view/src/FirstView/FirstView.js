@@ -4,20 +4,13 @@ import PostUrl from '../Service';
 
 const FirstView = () => {
 	const [url, setUrl] = useState('');
-	// useEffect(() => {});
 
 	const sendUrlHandler = (url) => {
 		if (url !== '') {
-			// console.log({ setUrl });
-			console.log(PostUrl(url));
+			PostUrl(url);
 		}
 	};
 
-	// const update = (event) => {
-	// 	event.preventDefault();
-	// 	setUrl(event.target.value);
-	// 	// console.log(setUrl);
-	// };
 	return (
 		<div className={classes.MainDiv}>
 			<div className={classes.FirstView}>
