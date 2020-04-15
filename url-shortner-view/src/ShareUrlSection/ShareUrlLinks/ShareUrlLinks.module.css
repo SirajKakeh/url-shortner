@@ -10,16 +10,7 @@
     color: white;
     box-sizing: border-box;
     text-decoration: none;
-
-}
-
-
-
-.Li {
-    color: rgba(80, 79, 79, 0.39);
-    font-size: 17px;
-    text-align: left;
-
+    font-size: 14px;
 }
 
 .Facebook {
