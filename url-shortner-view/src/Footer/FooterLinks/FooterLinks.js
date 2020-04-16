@@ -5,7 +5,7 @@ import classes from './FooterLinks.module.css';
 const FooterLinks = () => {
 	const footerlinks = [
 		{
-			link: '/ShortUrl.at',
+			link: '/',
 			title: 'ShortUrl.at',
 		},
 		{
