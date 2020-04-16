@@ -5,7 +5,7 @@
 	"jsxSingleQuote": true,
 	"printWidth": 80,
 	"useTabs": true,
-	"endOfLine": "lf",
+	"endOfLine": "auto",
 	"htmlWhitespaceSensitivity": "ignore",
 	"jsxBracketSameLine": false
 }
