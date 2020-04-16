@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './SecondView.module.css';
 import { NavLink } from 'react-router-dom';
 
-const SecondView = () => {
+const SecondView = (props) => {
 	return (
 		<React.Fragment>
 			<div className={classes.MainDiv}>

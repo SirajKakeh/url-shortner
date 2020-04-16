@@ -1,0 +1,31 @@
+.ShareUrlDiv {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.ShareUrlSectionsDiv {
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.ShareUrlSectionsDiv a,
+h2 {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.685);
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+
+.ShareUrlDiv ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+
+}
