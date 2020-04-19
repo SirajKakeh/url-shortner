@@ -28,7 +28,6 @@ const FooterLinks = () => {
 
   return (
     <div>
-      {' '}
       {footerlinks.map((footerlink) => (
         <li className={classes.FooterLinks} key={footerlink.link}>
           <NavLink to={footerlink.link}> {footerlink.title} </NavLink>

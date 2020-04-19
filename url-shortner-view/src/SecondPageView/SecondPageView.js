@@ -10,6 +10,7 @@ const SecondPageView = (props) => {
         setShortUrl={props.setShortUrl}
         setUrl={props.setUrl}
       />
+      <ShareUrlSection />
     </main>
   );
 };
