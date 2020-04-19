@@ -1,12 +1,16 @@
 import React from 'react';
-import classes from './View.module.css';
 import FirstView from '../FirstView/FirstView';
 import Features from '../Features/Features';
-import Header from '../Header/Header';
-const View = () => (
-	<main>
-		<FirstView />
-		<Features />
-	</main>
+
+const View = (props) => (
+  <main>
+    <FirstView
+      url={props.url}
+      setUrl={props.setUrl}
+      shortUrl={props.shortUrl}
+      setShortUrl={props.setShortUrl}
+    />
+    <Features />
+  </main>
 );
 export default View;

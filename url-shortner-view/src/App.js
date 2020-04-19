@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './Header/Header';
 import View from './View/View';
@@ -7,14 +7,38 @@ import SecondPageView from './SecondPageView/SecondPageView';
 import { Route } from 'react-router-dom';
 
 function App() {
-	return (
-		<div className='App'>
-			<Route path='/' component={Header} />
-			<Route path='/' exact component={View} />
-			<Route path='/shortener' component={SecondPageView} />
-			<Route path='/' component={Footer} />
-		</div>
-	);
+  const [url, setUrl] = useState('');
+  const [shortUrl, setShortUrl] = useState('');
+
+  return (
+    <div className='App'>
+      <Header />
+      <Route
+        path='/'
+        exact
+        render={() => (
+          <View
+            url={url}
+            setUrl={setUrl}
+            shortUrl={shortUrl}
+            setShortUrl={setShortUrl}
+          />
+        )}
+      />
+      <Route
+        path='/shortener'
+        render={() => (
+          <SecondPageView
+            url={url}
+            setUrl={setUrl}
+            shortUrl={shortUrl}
+            setShortUrl={setShortUrl}
+          />
+        )}
+      />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
