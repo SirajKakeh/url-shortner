@@ -1,11 +1,16 @@
 import React from 'react';
 import SecondView from '../SecondView/SecondView';
-import classes from './SecondPageView.module.css';
-import Header from '../Header/Header';
 
-const SecondPageView = () => (
-	<main>
-		<SecondView />
-	</main>
-);
+const SecondPageView = (props) => {
+  return (
+    <main>
+      <SecondView
+        url={props.url}
+        shortUrl={props.shortUrl}
+        setShortUrl={props.setShortUrl}
+        setUrl={props.setUrl}
+      />
+    </main>
+  );
+};
 export default SecondPageView;

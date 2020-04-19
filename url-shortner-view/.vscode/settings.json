@@ -1,6 +1,6 @@
 {
     "files.autoSave": "off",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "json.schemas": [],
     "[javascript]": {
         "editor.formatOnSave": true
