@@ -1,6 +1,6 @@
 import React from 'react';
 import SecondView from '../SecondView/SecondView';
-
+import ShareUrlSection from '../ShareUrlSection/ShareUrlSection';
 const SecondPageView = (props) => {
   return (
     <main>
