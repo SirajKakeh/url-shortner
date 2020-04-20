@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
 import classes from './FirstView.module.css';
 import PostUrl from '../Service';
+import Spinner from '../Spinner/Spinner';
 import { useHistory } from 'react-router-dom';
-
 const FirstView = (props) => {
   const history = useHistory();
+
   const sendUrlHandler = (url) => {
+    props.setSpinner(true);
     if (url !== '') {
-      PostUrl(url)
-        .then((response) => {
-          props.setShortUrl(response.data.short_url);
-          console.log(props.shortUrl);
-        })
-        .then(() => history.push('/shortener'));
+      PostUrl(url).then((response) => {
+        props.setSpinner(false);
+        props.setShortUrl(response.data.short_url);
+        history.push('/shortener');
+      });
     }
   };
 
   return (
     <div className={classes.MainDiv}>
+      {/* {spinnerDiv} */}
       <div className={classes.FirstView}>
         <h1> Paste the URL to be shortened </h1>
         <div className={classes.InputDiv}>
           <input
             className={classes.Input}
             placeholder='Enter the link here'
+            value={props.url}
             onChange={(event) => {
               event.preventDefault();
               props.setUrl(event.target.value);

@@ -7,9 +7,10 @@ const View = (props) => (
     <FirstView
       url={props.url}
       setUrl={props.setUrl}
-      shortUrl={props.shortUrl}
       setShortUrl={props.setShortUrl}
-    />
+      spinner={props.spinner}
+      setSpinner={props.setSpinner}
+    />{' '}
     <Features />
   </main>
 );

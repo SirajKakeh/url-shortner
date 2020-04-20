@@ -1,0 +1,8 @@
+.Spinner {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

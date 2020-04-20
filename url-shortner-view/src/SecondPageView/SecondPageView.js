@@ -4,12 +4,7 @@ import ShareUrlSection from '../ShareUrlSection/ShareUrlSection';
 const SecondPageView = (props) => {
   return (
     <main>
-      <SecondView
-        url={props.url}
-        shortUrl={props.shortUrl}
-        setShortUrl={props.setShortUrl}
-        setUrl={props.setUrl}
-      />
+      <SecondView url={props.url} shortUrl={props.shortUrl} />
       <ShareUrlSection />
     </main>
   );
