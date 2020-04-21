@@ -1,0 +1,17 @@
+.Spinner {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.Spinner img {
+  width: 10%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

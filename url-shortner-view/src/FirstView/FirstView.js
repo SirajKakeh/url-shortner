@@ -5,14 +5,20 @@ import { useHistory } from 'react-router-dom';
 
 const FirstView = (props) => {
   const history = useHistory();
+
   const sendUrlHandler = (url) => {
+    props.setSpinner(true);
     if (url !== '') {
       PostUrl(url)
         .then((response) => {
+          props.setSpinner(false);
           props.setShortUrl(response.data.short_url);
-          console.log(props.shortUrl);
+          history.push('/shortener');
         })
-        .then(() => history.push('/shortener'));
+        .catch((err) => {
+          alert('Please try again ');
+          props.setSpinner(false);
+        });
     }
   };
 
@@ -24,6 +30,7 @@ const FirstView = (props) => {
           <input
             className={classes.Input}
             placeholder='Enter the link here'
+            value={props.url}
             onChange={(event) => {
               event.preventDefault();
               props.setUrl(event.target.value);

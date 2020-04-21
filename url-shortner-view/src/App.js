@@ -5,14 +5,16 @@ import View from './View/View';
 import Footer from './Footer/Footer';
 import SecondPageView from './SecondPageView/SecondPageView';
 import { Route } from 'react-router-dom';
+import Spinner from './Spinner/Spinner';
 
 function App() {
   const [url, setUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
+  const [spinner, setSpinner] = useState(false);
 
   return (
     <div className='App'>
-      <Header />
+      {spinner && <Spinner />} <Header />
       <Route
         path='/'
         exact
@@ -20,21 +22,14 @@ function App() {
           <View
             url={url}
             setUrl={setUrl}
-            shortUrl={shortUrl}
             setShortUrl={setShortUrl}
+            setSpinner={setSpinner}
           />
         )}
       />
       <Route
         path='/shortener'
-        render={() => (
-          <SecondPageView
-            url={url}
-            setUrl={setUrl}
-            shortUrl={shortUrl}
-            setShortUrl={setShortUrl}
-          />
-        )}
+        render={() => <SecondPageView url={url} shortUrl={shortUrl} />}
       />
       <Footer />
     </div>
