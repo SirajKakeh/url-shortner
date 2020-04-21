@@ -10,7 +10,7 @@ import Spinner from './Spinner/Spinner';
 function App() {
   const [url, setUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
-  const [spinner, setSpinner] = useState(true);
+  const [spinner, setSpinner] = useState(false);
 
   return (
     <div className='App'>
