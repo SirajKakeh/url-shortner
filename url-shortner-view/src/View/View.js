@@ -8,7 +8,6 @@ const View = (props) => (
       url={props.url}
       setUrl={props.setUrl}
       setShortUrl={props.setShortUrl}
-      spinner={props.spinner}
       setSpinner={props.setSpinner}
     />{' '}
     <Features />

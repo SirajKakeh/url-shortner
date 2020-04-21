@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classes from './FirstView.module.css';
 import PostUrl from '../Service';
-import Spinner from '../Spinner/Spinner';
 import { useHistory } from 'react-router-dom';
+
 const FirstView = (props) => {
   const history = useHistory();
 
@@ -19,7 +19,6 @@ const FirstView = (props) => {
 
   return (
     <div className={classes.MainDiv}>
-      {/* {spinnerDiv} */}
       <div className={classes.FirstView}>
         <h1> Paste the URL to be shortened </h1>
         <div className={classes.InputDiv}>

@@ -6,19 +6,16 @@ import Footer from './Footer/Footer';
 import SecondPageView from './SecondPageView/SecondPageView';
 import { Route } from 'react-router-dom';
 import Spinner from './Spinner/Spinner';
-function App(props) {
+
+function App() {
   const [url, setUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
-  const [spinner, setSpinner] = useState(false);
+  const [spinner, setSpinner] = useState(true);
 
-  let spinnerDiv = '';
-  if (spinner) {
-    spinnerDiv = <Spinner />;
-  }
   return (
     <div className='App'>
-      {spinnerDiv}
-      <Header />
+      {' '}
+      {spinner ? <Spinner /> : ''} <Header />
       <Route
         path='/'
         exact
@@ -27,7 +24,6 @@ function App(props) {
             url={url}
             setUrl={setUrl}
             setShortUrl={setShortUrl}
-            spinner={spinner}
             setSpinner={setSpinner}
           />
         )}
