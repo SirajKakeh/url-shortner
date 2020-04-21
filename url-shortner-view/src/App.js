@@ -14,8 +14,7 @@ function App() {
 
   return (
     <div className='App'>
-      {' '}
-      {spinner ? <Spinner /> : ''} <Header />
+      {spinner && <Spinner />} <Header />
       <Route
         path='/'
         exact
@@ -27,7 +26,7 @@ function App() {
             setSpinner={setSpinner}
           />
         )}
-      />{' '}
+      />
       <Route
         path='/shortener'
         render={() => <SecondPageView url={url} shortUrl={shortUrl} />}

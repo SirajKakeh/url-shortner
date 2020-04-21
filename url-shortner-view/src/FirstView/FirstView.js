@@ -9,11 +9,16 @@ const FirstView = (props) => {
   const sendUrlHandler = (url) => {
     props.setSpinner(true);
     if (url !== '') {
-      PostUrl(url).then((response) => {
-        props.setSpinner(false);
-        props.setShortUrl(response.data.short_url);
-        history.push('/shortener');
-      });
+      PostUrl(url)
+        .then((response) => {
+          props.setSpinner(false);
+          props.setShortUrl(response.data.short_url);
+          history.push('/shortener');
+        })
+        .catch((err) => {
+          alert('Please try again ');
+          props.setSpinner(false);
+        });
     }
   };
 
