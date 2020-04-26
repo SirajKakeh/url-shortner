@@ -33,7 +33,10 @@ const SecondView = (props) => {
           <div className={classes.Div}>
             <p className={classes.p1}>
               Long URL:
-              <a href={props.url}> {props.url} </a>
+              <a href={props.url} target='_blank'>
+                {' '}
+                {props.url}{' '}
+              </a>
             </p>
             <p>
               Track the total of clicks in real - time from your shortened URL.

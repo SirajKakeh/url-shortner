@@ -8,6 +8,7 @@ const FirstView = (props) => {
 
   const sendUrlHandler = (url) => {
     props.setSpinner(true);
+
     if (url !== '') {
       PostUrl(url)
         .then((response) => {
@@ -16,7 +17,7 @@ const FirstView = (props) => {
           history.push('/shortener');
         })
         .catch((err) => {
-          alert('Please try again ');
+          alert('Please try again !');
           props.setSpinner(false);
         });
     }
