@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+// import { Provider } from 'react-redux';
+// import { createStore } from 'redux';
+// import reducer from './Reducer/Reducer';
 
+// let store = createStore(reducer);
+// store.dispatch({
+//   type: 'short_url',
+// });
 const app = (
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
+  <BrowserRouter>
+    {/* <Provider store={store}> */} <App /> {/* </Provider>{' '} */}
+  </BrowserRouter>
 );
 
 ReactDOM.render(app, document.getElementById('root'));

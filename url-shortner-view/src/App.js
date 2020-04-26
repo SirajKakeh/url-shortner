@@ -6,6 +6,7 @@ import Footer from './Footer/Footer';
 import SecondPageView from './SecondPageView/SecondPageView';
 import { Route } from 'react-router-dom';
 import Spinner from './Spinner/Spinner';
+// import { connect } from 'react-redux';
 
 function App() {
   const [url, setUrl] = useState('');
@@ -36,4 +37,9 @@ function App() {
   );
 }
 
+// const mapStateToProps = (state) => ({
+//   url: state.url,
+// });
+
 export default App;
+//  connect(mapStateToProps)(App);

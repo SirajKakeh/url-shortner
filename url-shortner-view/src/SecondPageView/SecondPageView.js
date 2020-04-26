@@ -5,7 +5,7 @@ const SecondPageView = (props) => {
   return (
     <main>
       <SecondView url={props.url} shortUrl={props.shortUrl} />
-      <ShareUrlSection />
+      <ShareUrlSection shortUrl={props.shortUrl} />
     </main>
   );
 };
