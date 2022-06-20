@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: batata
+      MONGO_INITDB_DATABASE: url_shortener_db
+
+  flask:
+    build: .
+    ports:
+      - 4300:4300
+    container_name: flask
+    restart: unless-stopped
+    environment:
+      FLASK_ENV: development
+      FLASK_RUN_PORT: 4300
+      DB_HOSTNAME: mongo
+      DB_NAME: url_shortener_db
+      DB_USERNAME: admin
+      DB_PASSWORD: batata
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    # networks:
+    #   - frontend
+    #   - backend

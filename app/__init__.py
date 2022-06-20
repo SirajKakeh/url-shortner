@@ -9,8 +9,14 @@ app = Flask(__name__)
 CORS(app)
 app.config.from_object(Config)
 
-client = MongoClient(os.environ.get("url_shortner_db_string"))
+client = MongoClient(app.config["DB_URI"])
+db = client[app.config["DB_NAME"]]
 
-db = client[os.environ.get("url_shortner_db_name")]
+try:
+    db.command("serverStatus")
+except Exception as e:
+    app.logger.error(e)
+else:
+    app.logger.debug("Connected to DB!")
 
 from app import routes
